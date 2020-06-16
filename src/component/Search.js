@@ -27,7 +27,7 @@ class Search extends Component {
         url: urlString,
         success: (searchResults) => {
           console.log("Fetched data successfully") 
-  
+  console.log(searchResults.results)
           const results = searchResults.results
           let movieRows = []
   
@@ -35,8 +35,14 @@ class Search extends Component {
   
             movie.poster_src = "https://image.tmdb.org/t/p/w185" + movie.poster_path
            
-            const movieRow = <MovieRow key={movie.id} movie={movie}/>
-            movieRows.push(movieRow)
+              const movieRow = <MovieRow key={movie.id} movie={movie} />
+              
+              if (movie.poster_path !== null) {
+                
+                movieRows.push(movieRow)
+              } 
+
+          
           })
           this.setState({rows:movieRows})
         },

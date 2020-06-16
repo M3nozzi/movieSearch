@@ -4,7 +4,8 @@ input {
     max-width: 500px;
     background: none;
     border: 1;
-    border-color:#9A38FC;
+    color:#3D2892;
+    border-color:#3D2892;
     border-radius: 4rem;
     padding: 1rem;
     font-size: 1.3rem;
@@ -13,6 +14,7 @@ input {
     padding: 1rem 2rem;
     font-weight: bold;
     margin: 2rem auto;
+    display:block
 
  
 }
@@ -20,17 +22,17 @@ input {
 
 /* Chrome/Opera/Safari */
 ::-webkit-input-placeholder { 
-    color: #9A38FC;
+    color: #3D2892;
   }
   /* Firefox 19+ */
   ::-moz-placeholder { 
-    color:#9A38FC;
+    color:#3D2892;
   }
   /* IE 10+ */
   :-ms-input-placeholder { 
-    color: #9A38FC;
+    color: #3D2892;
   }
   /* Firefox 18- */
   :-moz-placeholder { 
-    color: #9A38FC;
+    color: #3D2892;
   }

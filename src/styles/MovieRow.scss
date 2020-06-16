@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+img{
+    border-radius: 8%;
+}
+
+h3{
+    color:#3D2892;
+    font-weight: bold;
+    font-size: 34px;
+}
+
+p{
+    color:#3D2892;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 1.8em;
+}
+
+button{
+    display: block;
+ width: 6%;
+  padding: 12px 0;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #3D2892;
+  border: 0;
+  border-radius: 35px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+  &:hover {
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.16);
+    transform: translate(0, -5px);
+  }
+}
+
+  
+  .button:hover {
+    opacity: 1;
+  }

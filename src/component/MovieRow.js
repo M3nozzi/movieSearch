@@ -1,4 +1,5 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react';
+import style from '../styles/MovieRow.scss';
 
 class MovieRow extends Component {
 
@@ -16,12 +17,12 @@ class MovieRow extends Component {
         <tbody>
           <tr>
             <td>
-              <img alt="poster movie" width="100" src={this.props.movie.poster_src}/>
+              <img alt="poster movie"  src={this.props.movie.poster_src}/>
             </td>
             <td>
               <h3>{this.props.movie.title}</h3>
               <p>{this.props.movie.overview}</p>
-              <input type="button" onClick={this.viewMovie.bind(this)} value="View"/>
+              <button  onClick={this.viewMovie.bind(this)}>View more</button>
             </td>
           </tr>
         </tbody>
