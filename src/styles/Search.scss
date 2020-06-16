@@ -1,0 +1,36 @@
+ 
+input {
+    width: 80%;
+    max-width: 500px;
+    background: none;
+    border: 1;
+    border-color:#9A38FC;
+    border-radius: 4rem;
+    padding: 1rem;
+    font-size: 1.3rem;
+    border-radius: 50px;
+    background: white;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    margin: 2rem auto;
+
+ 
+}
+
+
+/* Chrome/Opera/Safari */
+::-webkit-input-placeholder { 
+    color: #9A38FC;
+  }
+  /* Firefox 19+ */
+  ::-moz-placeholder { 
+    color:#9A38FC;
+  }
+  /* IE 10+ */
+  :-ms-input-placeholder { 
+    color: #9A38FC;
+  }
+  /* Firefox 18- */
+  :-moz-placeholder { 
+    color: #9A38FC;
+  }

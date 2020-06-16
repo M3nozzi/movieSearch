@@ -1,68 +1,71 @@
-import React, {Component} from 'react';
-import './App.css';
 
+import React, { Component } from 'react';
+import style from '../styles/App.scss';
+import MovieRow from '../component/MovieRow';
+import $ from 'jquery';
+import Navbar from '../component/Navbar';
+import Search from '../component/Search';
 class App extends Component { 
 
-  constructor(props) {
-    super(props)
-    console.log("this is my initializer")
+  // constructor(props) {
+  //   super(props)
 
-    const movies = [
-      { id: 0, poster_src:"https://res.cloudinary.com/menozzi/image/upload/v1591803649/xuza41ulap4dblwxkob1.jpg", title: "Avengers: Infinity War", overview:"msksksksksks" },
-      {id: 1, poster_src:"https://res.cloudinary.com/menozzi/image/upload/v1591803649/xuza41ulap4dblwxkob1.jpg", title: "The Avengers", overview:"My second overview"}
-    ]
+  //   this.state = {}
+     
+  //   // urlDefault = "http://api.themoviedb.org/3/movie/popular?api_key=991f4c7dbfe4a96a1941e4bc830a7387&language=en-US"
+  //   this.performSearch("")
 
+  // }
+  
+  
 
-    var movieRows = []
-    movies.forEach((movie) => {
-      console.log(movie.title)
-      const movieRow = <table key={movie.id}>
-        <tbody>
-          <tr>
-            <td>
-              <img alt="poster movie" width="100" src={movie.poster_src}/>
-            </td>
-            <td>
-              {movie.title}
-              <p>{movie.overview}</p>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      movieRows.push(movieRow)
-      // movieRows.push(<p key={movie.id}>movie title: {movie.title}</p>)
-    })
+  // performSearch(searchTerm){
+  //   const urlDefault = "http://api.themoviedb.org/3/movie/popular?api_key=991f4c7dbfe4a96a1941e4bc830a7387&language=en-US"
+  //   let urlString = `http://api.themoviedb.org/3/search/movie?api_key=991f4c7dbfe4a96a1941e4bc830a7387&query=` + searchTerm
+    
+  //   if (searchTerm === "") {
+  //     urlString = urlDefault
+  //   }
+    
 
-    this.state  = {rows: movieRows}
+  //   $.ajax({
+  //     url: urlString,
+  //     success: (searchResults) => {
+  //       console.log("Fetched data successfully") 
 
-}
+  //       const results = searchResults.results
+  //       let movieRows = []
+
+  //       results.forEach((movie) => {
+
+  //         movie.poster_src = "https://image.tmdb.org/t/p/w185" + movie.poster_path
+         
+  //         const movieRow = <MovieRow key={movie.id} movie={movie}/>
+  //         movieRows.push(movieRow)
+  //       })
+  //       this.setState({rows:movieRows})
+  //     },
+  //     error: (xhr, status, err) => {
+  //       console.log("Failed to fetch")
+  //     }
+  //   })
+  // }
+
+  // searchChangeHandler(event) {
+  //   console.log(event.target.value)
+  //   const boundObject = this
+  //   const searchTerm = event.target.value
+  //  boundObject.performSearch(searchTerm)
+  // }
 
   render() {
     return (
       <div className="App">
-        <table className="titleBar">
-          <tbody>
-            <tr>
-              <td>
-                <img width="50" src="movie.svg" alt="Icon movies, popcorn and 3d glasses"/>
-              </td>
-              <td>
-                <h1>Movies Search</h1>
-              </td>
-            </tr>
-          </tbody>
-       </table>
-        
-        <input style={{
-          fontSize: 24,
-          display: 'block',
-          width: '98.5%',
-          paddingTop: 8,
-          paddingBottom: 8,
-          paddingLeft:16
-,        }} placeholder="Enter search term"/>
+        <Navbar />
+        <Search/>
+        {/* <input className="searchbar" onChange={this.searchChangeHandler.bind(this)} placeholder="Enter search term"/> */}
 
-        {this.state.rows}
+        {/* {this.state.rows} */}
 
       </div>
     )
