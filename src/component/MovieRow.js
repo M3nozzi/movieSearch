@@ -4,8 +4,7 @@ import React, { Component } from 'react';
 class MovieRow extends Component {
 
     viewMovie() {
-        console.log("trying to view movie")
-        
+               
         const url = "https://www.themoviedb.org/movie/" + this.props.movie.id
         window.location.href = url
     }
