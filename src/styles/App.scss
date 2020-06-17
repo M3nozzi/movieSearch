@@ -4,10 +4,13 @@
 html {
     font-family:Roboto, sans-serif;
     font-weight: bold;
+    overflow-x: hidden; 
   
   }
   body{
       margin:0;
+      padding: 0;
+      overflow-x: hidden; 
   }
 
   a {

@@ -1,21 +1,28 @@
-nav {
+footer {
+    position: fixed;
+    bottom: 0;
     color: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 8vh;
+    height: 5vh;
     width: 100vw;
     background-color:#3D2892;
-    font-size: 1.4rem;
+    margin-top:200px;
   
-    * {
-      margin: 0 0.2rem;
-    }
+  }
+  
+  footer > * {
+    margin: 15px;
+  }
+
+  h1{
+      font-size: 1.5vh;
   }
 
   @media (max-width:1469px) {
 
-    nav{
+    footer{
         width: 100vw;
     }
   }

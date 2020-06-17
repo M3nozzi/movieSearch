@@ -13,13 +13,14 @@ class MovieRow extends Component {
 
     render() {
         
-        return  <table key={this.props.movie.id}>
+      return <div className="divTable"> <table className="table table-responsive" key={this.props.movie.id}>
+          
         <tbody>
           <tr>
             <td>
-              <img alt="poster movie"  src={this.props.movie.poster_src}/>
+              <img className="poster" alt="poster movie"  src={this.props.movie.poster_src}/>
             </td>
-            <td>
+            <td className="Info">
               <h3>{this.props.movie.title}</h3>
               <p>{this.props.movie.overview}</p>
               <button  onClick={this.viewMovie.bind(this)}>View more</button>
@@ -27,6 +28,7 @@ class MovieRow extends Component {
           </tr>
         </tbody>
       </table>
+      </div>
    }
 
 }

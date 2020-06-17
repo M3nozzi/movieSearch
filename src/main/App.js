@@ -5,6 +5,10 @@ import MovieRow from '../component/MovieRow';
 import $ from 'jquery';
 import Navbar from '../component/Navbar';
 import Search from '../component/Search';
+import Footer from '../component/Footer';
+
+
+
 class App extends Component { 
 
   // constructor(props) {
@@ -66,7 +70,7 @@ class App extends Component {
         {/* <input className="searchbar" onChange={this.searchChangeHandler.bind(this)} placeholder="Enter search term"/> */}
 
         {/* {this.state.rows} */}
-
+      <Footer/>
       </div>
     )
   }
