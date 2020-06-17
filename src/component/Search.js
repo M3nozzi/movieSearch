@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import MovieRow from '../component/MovieRow';
 import $ from 'jquery';
-import style from '../styles/Search.scss';
+
 
 class Search extends Component { 
 
@@ -10,7 +10,7 @@ class Search extends Component {
   
       this.state = {}
       this.performSearch("")
-  
+      
     }
     
     
@@ -27,7 +27,7 @@ class Search extends Component {
         url: urlString,
         success: (searchResults) => {
           console.log("Fetched data successfully") 
-  console.log(searchResults.results)
+           
           const results = searchResults.results
           let movieRows = []
   
@@ -53,10 +53,9 @@ class Search extends Component {
     }
   
     searchChangeHandler(event) {
-      console.log(event.target.value)
       const boundObject = this
       const searchTerm = event.target.value
-     boundObject.performSearch(searchTerm)
+      boundObject.performSearch(searchTerm)
     }
   
     render() {
@@ -66,7 +65,7 @@ class Search extends Component {
               <input   onChange={this.searchChangeHandler.bind(this)} placeholder="Search a movie" />
              
               {this.state.rows}
-     </div>
+          </div>
     )
   }
     

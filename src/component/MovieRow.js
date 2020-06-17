@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import style from '../styles/MovieRow.scss';
+
 
 class MovieRow extends Component {
 
@@ -13,8 +13,8 @@ class MovieRow extends Component {
 
     render() {
         
-      return <div className="divTable"> <table className="table table-responsive" key={this.props.movie.id}>
-          
+      return <div className="divTable">
+        <table className="table table-responsive" key={this.props.movie.id}> 
         <tbody>
           <tr>
             <td>
@@ -23,12 +23,13 @@ class MovieRow extends Component {
             <td className="Info">
               <h3>{this.props.movie.title}</h3>
               <p>{this.props.movie.overview}</p>
-              <button  onClick={this.viewMovie.bind(this)}>View more</button>
+              <button onClick={this.viewMovie.bind(this)}>View more</button>
             </td>
           </tr>
         </tbody>
       </table>
       </div>
+    
    }
 
 }
