@@ -3,19 +3,13 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 8vh;
+    height: 7vh;
     width: 100vw;
     background-color:#3D2892;
-    font-size: 1.4rem;
+    font-size: 20rem;
   
     * {
       margin: 0 0.2rem;
     }
   }
-
-  @media (max-width:1469px) {
-
-    nav{
-        width: 100vw;
-    }
-  }
+ 
