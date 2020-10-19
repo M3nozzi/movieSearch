@@ -1,5 +1,5 @@
 import React from 'react';
-import { FiLinkedin, FiGithub } from 'react-icons/fi';
+import { AiOutlineLinkedin, AiOutlineGithub} from 'react-icons/ai';
 
 
 export default function Footer() {
@@ -7,10 +7,10 @@ export default function Footer() {
     <footer>
       <h1>Developed by Fabio Menozzi</h1>
       <a href="https://www.linkedin.com/in/menozzi-fabio/" target="_blank" rel="noopener noreferrer">
-        <FiLinkedin size={20} color="#fff" />
+        <AiOutlineLinkedin size={20} color="#fff" />
       </a>
       <a href="https://github.com/M3nozzi" target="_blank" rel="noopener noreferrer">
-        <FiGithub size={20} color="#fff" />
+        <AiOutlineGithub size={20} color="#fff" />
       </a>
     </footer>
   );

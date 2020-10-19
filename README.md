@@ -19,7 +19,7 @@ There is a button "view more" for each movie in the table that forwards to offic
 
  Clone the repository.
 ```sh
-git clone https://github.com/M3nozzi/dasa-challenge
+git clone https://github.com/M3nozzi/movieSearch
 ```
 Install packages.
 ```sh
