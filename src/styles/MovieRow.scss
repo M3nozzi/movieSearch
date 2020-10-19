@@ -35,50 +35,6 @@ p{
     margin-bottom:15px;
 }
 
-@media (max-width:1469px) {
-    .table {
-        display: block;
-        position: relative;
-        width: 100%;
-      }
-
-      
-     .table tbody,
-     .table td,
-     .tabletr {
-     display: block;
-  }
-  
-
-  .table tbody {
-    width: auto;
-    position: center;
-  
-   }
-
-  .Info{
-      padding-left: 2em;
-     
-  }
-  .poster{
-      padding: 0px 0px;
-    //   margin-left:15%;
-  }
-  h3{
-      margin:0px 0px;
-  }
-
-  .table tbody tr {
-    display: inline-block;
-  }
-
-  td{
-      margin-left: 0px;
-  }
-
-}
-
-
 button{
   display: block;
   width: 12em;
@@ -106,4 +62,66 @@ button{
 
   .divTable {
       margin-bottom: 30px;
+  }
+
+  @media (max-width:1469px) {
+    .table {
+        display: block;
+        position: relative;
+        width: 100%;
+      }
+
+      
+     .table tbody,
+     .table td,
+     .tabletr {
+     display: block;
+  }
+  
+
+  .table tbody {
+    width: auto;
+    position: center;
+  
+   }
+
+  .Info{
+      padding-left: 2em;
+     
+  }
+  .poster{
+      padding: 0px 0px;
+      margin-left:2%;
+  }
+
+  img.poster{
+    margin-left: 20%;
+  }
+
+  h3{
+      margin:0px 0px;
+  }
+
+  .table tbody tr {
+    display: inline-block;
+  }
+
+  td{
+    padding: 0px;
+    width: 293px;
+    margin-left: 0px;
+  }
+
+  tr{
+    width: 293px;
+  }
+
+}
+
+  @media (max-width:560px) {
+    td{
+      padding: 0px;
+      width: 293px;
+      margin-left: 0px;
+    }
   }
