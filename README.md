@@ -1,6 +1,6 @@
 # Movie Search
 
-That's a responsive project to search movies by name and get some informations.
+That's a project to search movies by name and get some informations.
 In the search field the user can type a letter or word then will be load movies that matches with the search. 
 There is a button "view more" for each movie in the table that forwards to official page with more info about the movie and the cast.
 
