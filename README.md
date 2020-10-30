@@ -30,3 +30,8 @@ Run the app.
 yarn start || npm start
 ```
 In the browser will open http://localhost:3000 to view the app.
+
+
+## Author
+
+Developed by [**Fabio Menozzi**](https://www.linkedin.com/in/menozzi-fabio/)
